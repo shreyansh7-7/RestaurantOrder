@@ -1,0 +1,31 @@
+uuid: 199ab926-5d26-46c8-9237-96a4019ce197
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.shreyansh_roti.field_shreyansh_price
+    - taxonomy.vocabulary.shreyansh_roti
+  module:
+    - text
+id: taxonomy_term.shreyansh_roti.default
+targetEntityType: taxonomy_term
+bundle: shreyansh_roti
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_shreyansh_price:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

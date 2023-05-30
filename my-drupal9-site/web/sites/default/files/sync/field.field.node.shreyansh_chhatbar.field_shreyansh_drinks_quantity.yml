@@ -1,0 +1,23 @@
+uuid: b0b73558-2a0f-4681-91af-aa7634839ee1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_shreyansh_drinks_quantity
+    - node.type.shreyansh_chhatbar
+id: node.shreyansh_chhatbar.field_shreyansh_drinks_quantity
+field_name: field_shreyansh_drinks_quantity
+entity_type: node
+bundle: shreyansh_chhatbar
+label: 'shreyansh drinks quantity'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

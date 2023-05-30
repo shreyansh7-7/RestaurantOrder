@@ -1,0 +1,23 @@
+uuid: ecf7b9b2-f1f7-4254-9b0a-08d7e9af96fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_shreyansh_price
+    - taxonomy.vocabulary.shreyansh_sabji
+id: taxonomy_term.shreyansh_sabji.field_shreyansh_price
+field_name: field_shreyansh_price
+entity_type: taxonomy_term
+bundle: shreyansh_sabji
+label: 'shreyansh sabji price'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

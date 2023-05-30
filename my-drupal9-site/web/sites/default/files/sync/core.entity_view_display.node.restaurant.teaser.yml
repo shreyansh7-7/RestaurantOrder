@@ -1,0 +1,24 @@
+uuid: 0c3ce16d-6e76-41f0-b5d8-f9c735e2478e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.restaurant.field_restaurant_address
+    - field.field.node.restaurant.field_restaurant_type
+    - node.type.restaurant
+  module:
+    - user
+id: node.restaurant.teaser
+targetEntityType: node
+bundle: restaurant
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_restaurant_address: true
+  field_restaurant_type: true

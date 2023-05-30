@@ -1,0 +1,23 @@
+uuid: 8a899bd7-c645-44fa-83f7-282feae12626
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_shreyansh_roti_quantity
+    - node.type.shreyansh_chhatbar
+id: node.shreyansh_chhatbar.field_shreyansh_roti_quantity
+field_name: field_shreyansh_roti_quantity
+entity_type: node
+bundle: shreyansh_chhatbar
+label: 'shreyansh roti quantity'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

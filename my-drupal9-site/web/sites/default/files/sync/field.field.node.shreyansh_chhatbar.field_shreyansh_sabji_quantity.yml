@@ -1,0 +1,23 @@
+uuid: 7197f65a-04f0-4edc-926b-021e18db2cde
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_shreyansh_sabji_quantity
+    - node.type.shreyansh_chhatbar
+id: node.shreyansh_chhatbar.field_shreyansh_sabji_quantity
+field_name: field_shreyansh_sabji_quantity
+entity_type: node
+bundle: shreyansh_chhatbar
+label: 'shreyansh sabji quantity'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

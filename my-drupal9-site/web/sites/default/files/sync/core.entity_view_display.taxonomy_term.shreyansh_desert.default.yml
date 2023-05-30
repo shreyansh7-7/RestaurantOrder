@@ -1,0 +1,31 @@
+uuid: a0b802f1-ef88-4435-9459-7218cb2af180
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.shreyansh_desert.field_shreyansh_price
+    - taxonomy.vocabulary.shreyansh_desert
+  module:
+    - text
+id: taxonomy_term.shreyansh_desert.default
+targetEntityType: taxonomy_term
+bundle: shreyansh_desert
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_shreyansh_price:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

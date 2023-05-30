@@ -1,0 +1,23 @@
+uuid: afbb3b28-70e4-4601-bce4-42d750d2624c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_shreyansh_desert_quantity
+    - node.type.shreyansh_chhatbar
+id: node.shreyansh_chhatbar.field_shreyansh_desert_quantity
+field_name: field_shreyansh_desert_quantity
+entity_type: node
+bundle: shreyansh_chhatbar
+label: 'shreyansh desert quantity'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

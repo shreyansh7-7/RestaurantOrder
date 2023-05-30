@@ -1,0 +1,8 @@
+uuid: 2073563d-e6d4-48a4-8c2d-60b874220e24
+langcode: en
+status: true
+dependencies: {  }
+name: 'shreyansh drinks'
+vid: shreyansh_drinks
+description: ''
+weight: -9

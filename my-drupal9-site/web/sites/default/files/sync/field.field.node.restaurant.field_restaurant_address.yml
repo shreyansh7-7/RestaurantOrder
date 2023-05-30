@@ -1,0 +1,26 @@
+uuid: 92797c2e-fe19-4ec0-83df-c2ed3e0d4e18
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_restaurant_address
+    - node.type.restaurant
+  module:
+    - address
+id: node.restaurant.field_restaurant_address
+field_name: field_restaurant_address
+entity_type: node
+bundle: restaurant
+label: 'Restaurant Address'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  available_countries:
+    IN: IN
+  langcode_override: ''
+  field_overrides: {  }
+  fields: {  }
+field_type: address

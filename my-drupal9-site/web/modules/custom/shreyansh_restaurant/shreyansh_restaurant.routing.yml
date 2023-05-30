@@ -1,0 +1,24 @@
+shreyansh_restaurant.config_form:
+  path: '/admin/shreyansh_restaurant/config/configurationform'
+  defaults:
+    _form: '\Drupal\shreyansh_restaurant\Form\ConfigForm'
+    _title: 'Shreyansh Restaurant Config Form'
+  requirements:
+    _permission: 'administer site configuration'
+
+shreyansh_restaurant.custom_restaurant_form:
+  path: '/customrestaurantform'
+  defaults:
+    _form: '\Drupal\shreyansh_restaurant\Form\CustomRestaurantForm'
+    _title: 'Restaurant Custom Form'
+  requirements:
+    _permission: 'administer site configuration'  
+
+
+shreyansh_restaurant.codeduck_config_form:
+  path: '/admin/shreyansh_restaurant/config/restconfig'
+  defaults:
+    _form: '\Drupal\shreyansh_restaurant\Form\ConfigRestaurantForm'
+    _title: 'Codeduck Restaurant Set Price Config Form'
+  requirements:
+    _permission: 'administer site configuration'

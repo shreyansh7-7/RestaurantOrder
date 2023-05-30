@@ -1,0 +1,29 @@
+uuid: a8a259e2-960a-4eb4-8e60-73354c3d184c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_shreyansh_roti
+    - node.type.shreyansh_chhatbar
+    - taxonomy.vocabulary.shreyansh_roti
+id: node.shreyansh_chhatbar.field_shreyansh_roti
+field_name: field_shreyansh_roti
+entity_type: node
+bundle: shreyansh_chhatbar
+label: 'shreyansh roti'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      shreyansh_roti: shreyansh_roti
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

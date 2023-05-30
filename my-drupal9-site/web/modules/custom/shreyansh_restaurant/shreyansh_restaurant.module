@@ -1,0 +1,107 @@
+<?php 
+
+use Drupal\Core\Routing\RouteMatchInterface; 
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\shreyansh_restaurant\RestaurantService;
+use Drupal\node\Entity\Node;
+use Drupal\user\UserInterface;
+
+function shreyansh_restaurant_help($route_name, RouteMatchInterface $route_match) {
+	//$service = \Drupal::service('hello_world.salutation');
+	//$result = $service->getSalutation();
+	switch ($route_name) {
+		case 'help.page.shreyansh_restaurant':
+			$result = 'This is restaurant module. Here, we provide restaurant billing system.';
+			$output = '';
+			$output .= '<h3>' . t('About Us') . '</h3>';
+			$output .= '<p>' . $result . '</p>';
+			return $output;
+		default:
+	}
+}
+
+
+function hook_user_login(UserInterface $account) {
+	dump("hii user");
+	exit;
+	\Drupal::messenger()
+      ->addStatus(t('Configure your <a href=":user-edit">account time zone setting</a>.', [
+        ':user-edit' => $account->toUrl('edit-form', [
+          'query' => \Drupal::destination()
+            ->getAsArray(),
+          'fragment' => 'edit-timezone',
+        ])->toString(),
+	]));
+}
+
+
+// function fancy_login_user_login(&$edit, $account) {
+// 	if(variable_get('fancy_login_successful_message',0)){
+// 		\Drupal::messenger()->addMessage(t('Log in successful for %name.', array('%name' => $account->name)));
+// 	//   drupal_set_message(t('Log in successful for %name.', array('%name' => $account->name)));
+// 	 }
+//  }
+
+// function fancy_login_settings($form, &$form_state) {
+
+// $form['fancy_login_successful_message'] = array(
+// 		'#title' => t('Display Message after Successful Login'),
+// 		'#type' => 'checkbox',
+// 		'#description' => t('If this Box is checked, a display message appears after a successful login attempt'),
+// 		'#default_value' => variable_get('fancy_login_successful_message', 0),
+// 	);
+
+// }
+
+// function shreyansh_restaurant_node_presave(Drupal\Core\Entity\EntityInterface $node) {
+	
+// 	if ($node->getType() == 'shreyansh_chhatbar') {
+// 		//calling shreyansh_restaurant.restaurant service.
+// 		$service = \Drupal::service('shreyansh_restaurant.restaurant');
+
+// 		//getting desert price.
+// 		if (!$node->get('field_desert')->isEmpty()) {
+// 			$getDesert = $node->get('field_desert')->getString();
+// 			$getDesertQnt = $node->get('field_shreyansh_desert_quantity')->getString();
+// 			$desert_price = $service->getDesertPrice($getDesert, $getDesertQnt);
+// 		}
+
+// 		//getting drink price.
+// 		if (!$node->get('field_shreyansh_drink')->isEmpty()) {
+// 			$getDrink = $node->get('field_shreyansh_drink')->getString();
+// 			$getDrinkQnt = $node->get('field_shreyansh_drinks_quantity')->getString();
+// 			$drink_price = $service->getDrinkPrice($getDrink, $getDrinkQnt);
+// 		}
+
+// 		//getting starter price.
+// 		if (!$node->get('field_shreyansh_starter')->isEmpty()) {
+// 			$getStarter = $node->get('field_shreyansh_starter')->getString();
+// 			$getStarterQnt = $node->get('field_shreyansh_starter_quantity')->getString();
+// 			$starter_price = $service->getStarterPrice($getStarter, $getStarterQnt);
+// 		}
+
+// 		//getting roti price.
+// 		if (!$node->get('field_shreyansh_roti')->isEmpty()) {
+// 			$getRoti = $node->get('field_shreyansh_roti')->getString();
+// 			$getRotiQnt = $node->get('field_shreyansh_roti_quantity')->getString();
+// 			$roti_price = $service->getRotiPrice($getRoti, $getRotiQnt);
+// 		}
+
+// 		//getting sabji price.
+// 		if (!$node->get('field_shreyansh_sabji')->isEmpty()) {
+// 			$getSabji = $node->get('field_shreyansh_sabji')->getString();
+// 			$getSabjiQnt = $node->get('field_shreyansh_sabji_quantity')->getString();
+// 			$sabji_price = $service->getSabjiPrice($getSabji, $getSabjiQnt);
+// 		}
+		
+// 		//setting field_total field by sum of all.
+// 		$field_list = ['desert_price'=>$desert_price, 'drink_price'=>$drink_price, 'starter_price'=>$starter_price, 'roti_price'=>$roti_price, 'sabji_price'=>$sabji_price];
+// 		$final_total = $service->getTotal($field_list);
+// 		//getting configform configs.
+		
+
+// 		$node->set('field_total',$final_total);
+// 	}
+
+// }
+

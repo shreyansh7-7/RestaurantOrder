@@ -1,0 +1,37 @@
+uuid: e3c0f0e1-35a6-4c1e-93e1-19f45fb3c663
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.restaurant.field_restaurant_address
+    - field.field.node.restaurant.field_restaurant_type
+    - node.type.restaurant
+  module:
+    - address
+    - user
+id: node.restaurant.default
+targetEntityType: node
+bundle: restaurant
+mode: default
+content:
+  field_restaurant_address:
+    type: address_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_restaurant_type:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

@@ -1,0 +1,6 @@
+name: Custom Codeduck
+description: This is custom Codeduck module
+type: module
+core_version_requirement: ^8 || ^9
+package: custom
+  

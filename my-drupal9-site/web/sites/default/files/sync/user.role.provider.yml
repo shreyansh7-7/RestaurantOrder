@@ -1,0 +1,60 @@
+uuid: ce5c91e4-8f08-423f-94ed-13b2c6fe14c5
+langcode: en
+status: true
+dependencies:
+  module:
+    - admin_toolbar_search
+    - block_content
+    - comment
+    - config
+    - contact
+    - field_ui
+    - file
+    - node
+    - pathauto
+    - registration_role
+    - search
+    - system
+    - taxonomy
+    - toolbar
+id: provider
+label: Provider
+weight: 4
+is_admin: null
+permissions:
+  - 'access content'
+  - 'access content overview'
+  - 'access files overview'
+  - 'access site reports'
+  - 'access toolbar'
+  - 'administer block_content display'
+  - 'administer block_content fields'
+  - 'administer block_content form display'
+  - 'administer comment fields'
+  - 'administer comment form display'
+  - 'administer contact_message fields'
+  - 'administer contact_message form display'
+  - 'administer menu'
+  - 'administer modules'
+  - 'administer node display'
+  - 'administer node fields'
+  - 'administer node form display'
+  - 'administer pathauto'
+  - 'administer registration roles'
+  - 'administer search'
+  - 'administer site configuration'
+  - 'administer software updates'
+  - 'administer taxonomy_term display'
+  - 'administer taxonomy_term fields'
+  - 'administer taxonomy_term form display'
+  - 'administer themes'
+  - 'administer user display'
+  - 'administer user fields'
+  - 'administer user form display'
+  - 'export configuration'
+  - 'import configuration'
+  - 'notify of path changes'
+  - 'search content'
+  - 'synchronize configuration'
+  - 'use admin toolbar search'
+  - 'view the administration theme'

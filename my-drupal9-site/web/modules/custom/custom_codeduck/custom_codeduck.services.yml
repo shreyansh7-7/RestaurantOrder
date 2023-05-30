@@ -1,0 +1,4 @@
+services:
+  custom_codeduck.codeduck:
+    class: Drupal\custom_codeduck\MyService
+    arguments: ['@config.factory', '@current_user']

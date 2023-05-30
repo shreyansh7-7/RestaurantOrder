@@ -1,0 +1,20 @@
+uuid: a73edbc1-f6a4-44b1-80f9-533ed072e22c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_shreyansh_roti_quantity
+field_name: field_shreyansh_roti_quantity
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

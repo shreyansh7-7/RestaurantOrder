@@ -1,0 +1,14 @@
+uuid: 319933f3-e660-4cfc-a8c4-af8befcc1ee1
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.provider
+  module:
+    - user
+id: user_add_role_action.provider
+label: 'Add the Provider role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: provider

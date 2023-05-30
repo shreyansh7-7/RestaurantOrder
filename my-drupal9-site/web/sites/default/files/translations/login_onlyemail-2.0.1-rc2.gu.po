@@ -1,0 +1,18 @@
+# Gujarati translation of Login with Email only (2.0.1-rc2)
+# Copyright (c) 2022 by the Gujarati translation team
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Login with Email only (2.0.1-rc2)\n"
+"POT-Creation-Date: 2022-01-19 08:48+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Language-Team: Gujarati\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+msgid "Email address"
+msgstr "ઈ-મેઈલ સરનામુ"
+msgid "Other"
+msgstr "અન્ય"

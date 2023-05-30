@@ -1,0 +1,21 @@
+uuid: 34afd189-36ee-460e-bc09-e0c97de03148
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_customer_mobile_no_
+    - node.type.shreyansh_chhatbar
+  module:
+    - telephone
+id: node.shreyansh_chhatbar.field_customer_mobile_no_
+field_name: field_customer_mobile_no_
+entity_type: node
+bundle: shreyansh_chhatbar
+label: 'Customer Mobile No.'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

@@ -1,0 +1,44 @@
+uuid: 14d26028-571a-4ee6-9dcc-1f7d558cb6d2
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a8a4838b-f205-4748-b0d9-53e438eeaad8'
+  module:
+    - block_content
+    - node
+    - user
+  theme:
+    - olivero
+id: first
+theme: olivero
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:a8a4838b-f205-4748-b0d9-53e438eeaad8'
+settings:
+  id: 'block_content:a8a4838b-f205-4748-b0d9-53e438eeaad8'
+  label: first
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      anonymous: anonymous
+      authenticated: authenticated
+      content_editor: content_editor
+      administrator: administrator
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      page: page

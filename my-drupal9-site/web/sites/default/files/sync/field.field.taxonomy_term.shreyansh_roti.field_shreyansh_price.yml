@@ -1,0 +1,23 @@
+uuid: 465c5c88-6047-406d-a50d-042815d1d1c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_shreyansh_price
+    - taxonomy.vocabulary.shreyansh_roti
+id: taxonomy_term.shreyansh_roti.field_shreyansh_price
+field_name: field_shreyansh_price
+entity_type: taxonomy_term
+bundle: shreyansh_roti
+label: 'shreyansh roti price'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,29 @@
+uuid: 292aaed3-a2e6-40f0-b55e-d17dc7e5464e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_shreyansh_sabji
+    - node.type.shreyansh_chhatbar
+    - taxonomy.vocabulary.shreyansh_sabji
+id: node.shreyansh_chhatbar.field_shreyansh_sabji
+field_name: field_shreyansh_sabji
+entity_type: node
+bundle: shreyansh_chhatbar
+label: 'shreyansh sabji'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      shreyansh_sabji: shreyansh_sabji
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

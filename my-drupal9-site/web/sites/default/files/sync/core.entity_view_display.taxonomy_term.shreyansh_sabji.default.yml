@@ -1,0 +1,31 @@
+uuid: e5c6f6e5-5b8f-4982-ab79-c020eb332b36
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.shreyansh_sabji.field_shreyansh_price
+    - taxonomy.vocabulary.shreyansh_sabji
+  module:
+    - text
+id: taxonomy_term.shreyansh_sabji.default
+targetEntityType: taxonomy_term
+bundle: shreyansh_sabji
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_shreyansh_price:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

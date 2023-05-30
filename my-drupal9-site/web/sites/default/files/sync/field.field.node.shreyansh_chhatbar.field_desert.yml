@@ -1,0 +1,29 @@
+uuid: 93457840-6f8e-4558-a52e-016ba416456b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_desert
+    - node.type.shreyansh_chhatbar
+    - taxonomy.vocabulary.shreyansh_desert
+id: node.shreyansh_chhatbar.field_desert
+field_name: field_desert
+entity_type: node
+bundle: shreyansh_chhatbar
+label: desert
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      shreyansh_desert: shreyansh_desert
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

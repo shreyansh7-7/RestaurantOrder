@@ -1,0 +1,82 @@
+<?php
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\hello_world\Event\UserLoginEvent;
+
+/**
+* Implements hook_help().
+*/
+function hello_world_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.hello_world':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('This is an example module.') . '</p>';
+      return $output;
+    default:
+  }
+}
+
+
+
+/**
+ * Implements hook_user_login().
+ */
+function hello_world_user_login($account) {
+  // Instantiate our event.
+  $event = new UserLoginEvent($account);
+
+  // Get the event_dispatcher service and dispatch the event.
+  $event_dispatcher = \Drupal::service('event_dispatcher');
+  $event_dispatcher->dispatch($event, UserLoginEvent::EVENT_NAME);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function hello_world_simple_fb_connect_login($drupal_user) {
+//   drupal_set_message(t('You are now logged in as %username.', array('%username' => $drupal_user->name)));
+// }
+
+// function hello_world_form_alter(&$form, &$form_state, $form_id) {
+//   if ($form_id == 'user_login') {
+//     dump("dv f ");
+//     $form['#submit'][] = 'MYMODULE_user_login_submit';
+//   }
+// }
+
+// function user_login_submit($route_name, RouteMatchInterface $route_match){
+//   dump($route_name);
+//   exit;
+//   switch ($route_name) {
+//     case 'user.page.check_logged_in=1':
+//       $output = \Drupal::messenger()->addMessage(t("Logged in!"));
+//       return $output;
+//     default:
+//   }
+// }
+// function YourThemeName_form_user_login_form_alter(&$form, FormStateInterface $form_state) {
+//   $form['newline'] = array(
+//     '#type' => 'markup',
+//     '#markup' => t('<h2>Enter your login information here!</h2>'),
+//     '#weight' => -10,
+//   );
+// }
+
+// /**
+// * Implements hook_form_alter().
+// */
+// function my_module_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+//   if ($form_id == 'salutation_configuration_form') {
+//     // Perform alterations.
+//   }

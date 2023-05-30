@@ -1,0 +1,29 @@
+uuid: ac127f67-cd68-4387-a30d-224a809d4744
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_restaurant_name
+    - node.type.restaurant
+    - node.type.shreyansh_chhatbar
+id: node.shreyansh_chhatbar.field_restaurant_name
+field_name: field_restaurant_name
+entity_type: node
+bundle: shreyansh_chhatbar
+label: 'Restaurant Name'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      restaurant: restaurant
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,29 @@
+uuid: 66534ab0-be68-4790-9c4d-d00922eccf0b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_shreyansh_starter
+    - node.type.shreyansh_chhatbar
+    - taxonomy.vocabulary.shreyansh_starter
+id: node.shreyansh_chhatbar.field_shreyansh_starter
+field_name: field_shreyansh_starter
+entity_type: node
+bundle: shreyansh_chhatbar
+label: 'shreyansh starter'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      shreyansh_starter: shreyansh_starter
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

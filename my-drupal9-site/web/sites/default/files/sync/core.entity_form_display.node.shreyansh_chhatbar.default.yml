@@ -1,0 +1,162 @@
+uuid: 1d50a2c8-f27e-4316-8f37-1cb445c81fb3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.shreyansh_chhatbar.field_customer_mobile_no_
+    - field.field.node.shreyansh_chhatbar.field_desert
+    - field.field.node.shreyansh_chhatbar.field_restaurant_name
+    - field.field.node.shreyansh_chhatbar.field_shreyansh_desert_quantity
+    - field.field.node.shreyansh_chhatbar.field_shreyansh_drink
+    - field.field.node.shreyansh_chhatbar.field_shreyansh_drinks_quantity
+    - field.field.node.shreyansh_chhatbar.field_shreyansh_roti
+    - field.field.node.shreyansh_chhatbar.field_shreyansh_roti_quantity
+    - field.field.node.shreyansh_chhatbar.field_shreyansh_sabji
+    - field.field.node.shreyansh_chhatbar.field_shreyansh_sabji_quantity
+    - field.field.node.shreyansh_chhatbar.field_shreyansh_starter
+    - field.field.node.shreyansh_chhatbar.field_shreyansh_starter_quantity
+    - field.field.node.shreyansh_chhatbar.field_total
+    - node.type.shreyansh_chhatbar
+  module:
+    - path
+    - telephone
+id: node.shreyansh_chhatbar.default
+targetEntityType: node
+bundle: shreyansh_chhatbar
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_customer_mobile_no_:
+    type: telephone_default
+    weight: 7
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_desert:
+    type: entity_reference_autocomplete
+    weight: 27
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_restaurant_name:
+    type: options_select
+    weight: 26
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_shreyansh_desert_quantity:
+    type: number
+    weight: 17
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_shreyansh_drink:
+    type: options_select
+    weight: 14
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_shreyansh_drinks_quantity:
+    type: number
+    weight: 15
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_shreyansh_roti:
+    type: options_select
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_shreyansh_roti_quantity:
+    type: number
+    weight: 11
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_shreyansh_sabji:
+    type: options_select
+    weight: 12
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_shreyansh_sabji_quantity:
+    type: number
+    weight: 13
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_shreyansh_starter:
+    type: options_select
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_shreyansh_starter_quantity:
+    type: number
+    weight: 9
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 3
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 6
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 4
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 1
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  field_total: true

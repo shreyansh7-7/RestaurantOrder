@@ -1,0 +1,31 @@
+uuid: a4b393c9-3dad-477b-a10c-779e0078734b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.shreyansh_starter.field_shreyansh_price
+    - taxonomy.vocabulary.shreyansh_starter
+  module:
+    - text
+id: taxonomy_term.shreyansh_starter.default
+targetEntityType: taxonomy_term
+bundle: shreyansh_starter
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_shreyansh_price:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

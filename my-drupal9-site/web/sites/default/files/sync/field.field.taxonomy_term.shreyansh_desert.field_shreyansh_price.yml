@@ -1,0 +1,23 @@
+uuid: 62e4d569-02f7-4e60-8529-8950fbee8db7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_shreyansh_price
+    - taxonomy.vocabulary.shreyansh_desert
+id: taxonomy_term.shreyansh_desert.field_shreyansh_price
+field_name: field_shreyansh_price
+entity_type: taxonomy_term
+bundle: shreyansh_desert
+label: 'shreyansh desert price'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

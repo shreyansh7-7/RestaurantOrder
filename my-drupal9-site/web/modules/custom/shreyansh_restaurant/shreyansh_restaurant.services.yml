@@ -1,0 +1,8 @@
+services:
+  shreyansh_restaurant.restaurant:
+    class: Drupal\shreyansh_restaurant\RestaurantService
+    arguments: ['@config.factory']
+
+  shreyansh_restaurant.custom_restaurant:
+    class: Drupal\shreyansh_restaurant\CustomFormService
+    arguments: ['@config.factory']

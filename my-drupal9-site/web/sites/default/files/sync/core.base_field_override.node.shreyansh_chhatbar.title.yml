@@ -1,0 +1,18 @@
+uuid: 4fde64d8-8225-4474-87ab-a2d3482ed0fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.shreyansh_chhatbar
+id: node.shreyansh_chhatbar.title
+field_name: title
+entity_type: node
+bundle: shreyansh_chhatbar
+label: 'shreyansh customer name'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

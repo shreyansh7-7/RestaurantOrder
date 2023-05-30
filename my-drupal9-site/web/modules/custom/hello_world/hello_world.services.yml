@@ -1,0 +1,22 @@
+services:
+  hello_world.salutation:
+    class: Drupal\hello_world\HelloWorldSalutation
+    arguments: ['@config.factory', '@event_dispatcher']
+  hello_world.redirect_subscriber:
+    class: \Drupal\hello_world\EventSubscriber\HelloWorldRedirectSubscriber
+    arguments: ['@current_user', '@current_route_match']
+    tags:
+    - {name: event_subscriber}
+  # Name of this service.
+  # my_config_events_subscriber:
+  #   # Event subscriber class that will listen for the events.
+  #   class: '\Drupal\hello_world\EventSubscriber\ConfigEventsSubscriber'
+  #   # Tagged as an event_subscriber to register this subscriber with the event_dispatch service.
+  #   tags:
+  #     - { name: 'event_subscriber' }
+
+  # Subscriber to the event we dispatch in hook_user_login.
+  hello_world_user_login:
+    class: '\Drupal\hello_world\EventSubscriber\UserLoginSubscriber'
+    tags:
+      - { name: 'event_subscriber' }

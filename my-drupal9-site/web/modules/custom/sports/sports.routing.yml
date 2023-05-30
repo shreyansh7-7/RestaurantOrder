@@ -1,0 +1,14 @@
+sports.codeduck:
+  path: '/sports'
+  defaults:
+    _controller: '\Drupal\sports\Controller\SportsController::players'
+  requirements:
+    _permission: 'access content'
+
+sports.custom_form:
+  path: '/sportsform'
+  defaults:
+    _form: '\Drupal\sports\Form\SportsForm'
+    _title: 'Sports Custom Form'
+  requirements:
+    _permission: 'administer site configuration'  

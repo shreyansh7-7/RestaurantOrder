@@ -1,0 +1,46 @@
+uuid: 5402bbdf-e852-4bf9-9508-10788f8cd124
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.shreyansh_chhatbar.field_customer_mobile_no_
+    - field.field.node.shreyansh_chhatbar.field_desert
+    - field.field.node.shreyansh_chhatbar.field_restaurant_name
+    - field.field.node.shreyansh_chhatbar.field_shreyansh_desert_quantity
+    - field.field.node.shreyansh_chhatbar.field_shreyansh_drink
+    - field.field.node.shreyansh_chhatbar.field_shreyansh_drinks_quantity
+    - field.field.node.shreyansh_chhatbar.field_shreyansh_roti
+    - field.field.node.shreyansh_chhatbar.field_shreyansh_roti_quantity
+    - field.field.node.shreyansh_chhatbar.field_shreyansh_sabji
+    - field.field.node.shreyansh_chhatbar.field_shreyansh_sabji_quantity
+    - field.field.node.shreyansh_chhatbar.field_shreyansh_starter
+    - field.field.node.shreyansh_chhatbar.field_shreyansh_starter_quantity
+    - field.field.node.shreyansh_chhatbar.field_total
+    - node.type.shreyansh_chhatbar
+  module:
+    - user
+id: node.shreyansh_chhatbar.teaser
+targetEntityType: node
+bundle: shreyansh_chhatbar
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_customer_mobile_no_: true
+  field_desert: true
+  field_restaurant_name: true
+  field_shreyansh_desert_quantity: true
+  field_shreyansh_drink: true
+  field_shreyansh_drinks_quantity: true
+  field_shreyansh_roti: true
+  field_shreyansh_roti_quantity: true
+  field_shreyansh_sabji: true
+  field_shreyansh_sabji_quantity: true
+  field_shreyansh_starter: true
+  field_shreyansh_starter_quantity: true
+  field_total: true

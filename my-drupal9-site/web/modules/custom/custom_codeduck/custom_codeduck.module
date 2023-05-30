@@ -1,0 +1,28 @@
+<?php 
+
+use Drupal\Core\Routing\RouteMatchInterface; 
+
+/**
+* Implements hook_help().
+*/
+
+function custom_codeduck_help($route_name, RouteMatchInterface $route_match) {
+  //$service = \Drupal::service('hello_world.salutation');
+  //$result = $service->getSalutation();
+  switch ($route_name) {
+    case 'help.page.custom_codeduck':
+      $output = '';
+      $output .= '<h3>' . t('About Us') . '</h3>';
+      $output .= '<p>' . $result . '</p>';
+      return $output;
+    default:
+  }
+}
+
+/**
+* Implements hook_form_FORM_ID_alter().
+*/
+
+function custom_codeduck_form_custom_codeduck_salutation_configuration_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+	$form['provider']['#title'] = "set config for provider";
+}

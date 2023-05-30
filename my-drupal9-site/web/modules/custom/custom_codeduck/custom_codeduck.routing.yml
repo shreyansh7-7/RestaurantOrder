@@ -1,0 +1,31 @@
+custom_codeduck.dashboard:
+  path: '/dashboard'
+  defaults:
+    _controller: '\Drupal\custom_codeduck\Controller\CodeduckController::getResult'
+    _title: 'Welcome TO Dashboard'
+  requirements:
+    _permission: 'access content'
+
+custom_codeduck.codeduck:
+  path: '/custom-codeduck'
+  defaults:
+    _controller: '\Drupal\custom_codeduck\Controller\CodeduckController::getResult'
+    _title: 'Welcome To Codeduck'
+  requirements:
+    _permission: 'access content'
+
+custom_codeduck.greeting_form:
+  path: '/admin/custom_codeduck/config/salutation-configuration'
+  defaults:
+    _form: '\Drupal\custom_codeduck\Form\CodeduckConfigurationForm'
+    _title: 'Codeduck Salutation configuration'
+  requirements:
+    _permission: 'administer site configuration'
+
+custom_codeduck.custom_form:
+  path: '/customform'
+  defaults:
+    _form: '\Drupal\custom_codeduck\Form\CustomForm'
+    _title: 'Codeduck Custom Form'
+  requirements:
+    _permission: 'administer site configuration'  

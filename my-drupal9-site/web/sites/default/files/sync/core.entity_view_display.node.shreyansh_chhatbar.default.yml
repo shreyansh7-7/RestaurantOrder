@@ -1,0 +1,140 @@
+uuid: 4cbc2931-7915-435b-96b6-cdf1cc55255f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.shreyansh_chhatbar.field_customer_mobile_no_
+    - field.field.node.shreyansh_chhatbar.field_desert
+    - field.field.node.shreyansh_chhatbar.field_restaurant_name
+    - field.field.node.shreyansh_chhatbar.field_shreyansh_desert_quantity
+    - field.field.node.shreyansh_chhatbar.field_shreyansh_drink
+    - field.field.node.shreyansh_chhatbar.field_shreyansh_drinks_quantity
+    - field.field.node.shreyansh_chhatbar.field_shreyansh_roti
+    - field.field.node.shreyansh_chhatbar.field_shreyansh_roti_quantity
+    - field.field.node.shreyansh_chhatbar.field_shreyansh_sabji
+    - field.field.node.shreyansh_chhatbar.field_shreyansh_sabji_quantity
+    - field.field.node.shreyansh_chhatbar.field_shreyansh_starter
+    - field.field.node.shreyansh_chhatbar.field_shreyansh_starter_quantity
+    - field.field.node.shreyansh_chhatbar.field_total
+    - node.type.shreyansh_chhatbar
+  module:
+    - user
+id: node.shreyansh_chhatbar.default
+targetEntityType: node
+bundle: shreyansh_chhatbar
+mode: default
+content:
+  field_customer_mobile_no_:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_desert:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 15
+    region: content
+  field_restaurant_name:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 14
+    region: content
+  field_shreyansh_desert_quantity:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_shreyansh_drink:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_shreyansh_drinks_quantity:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_shreyansh_roti:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_shreyansh_roti_quantity:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  field_shreyansh_sabji:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_shreyansh_sabji_quantity:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 12
+    region: content
+  field_shreyansh_starter:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_shreyansh_starter_quantity:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 13
+    region: content
+  field_total:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }
